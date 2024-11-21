@@ -1,0 +1,136 @@
+/* General Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #FFECD2, #FF5733);
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  
+  /* Each Section */
+  .section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: #FEFDFD;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1, h2 {
+    color: #FF5733;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Carousel */
+  .carousel {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-controls {
+    margin-top: 10px;
+  }
+  
+  .carousel-controls .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+  
+  /* Wish Section */
+  textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 15px 0;
+    border: 2px solid #FFAB76;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #FFF7F4;
+  }
+  
+  #wishes-display {
+    width: 80%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 15px 0;
+    padding: 10px;
+    background: #FFF7F4;
+    border: 2px solid #FFAB76;
+    border-radius: 10px;
+  }
+  
+  #wishes-display p {
+    background: #FFF2E7;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #FF5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #FF7849;
+  }
+  #toggle-music {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;   
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    cursor:-moz-grab;
+    text-align: center;
+  }
+  

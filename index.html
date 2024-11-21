@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday from S.M.Rehman</title>
+  <link rel="icon" href="images/1.svg" type="image/jpg" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button class="btn" id="toggle-music">Pause Music</button>
+  <div class="wrapper">
+    <!-- Welcome Section -->
+    <section class="section" id="welcome-section">
+      <h1>🎉 Happy Birthday, Arham Tariq! 🎂</h1>
+      <p>May your day be filled with laughter, love, and everything you wish for!</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/index.umd.js"></script>
+
+
+    <!-- Carousel Section -->
+    <section class="section" id="carousel-section">
+      <h2>You my friend</h2>
+      <div class="carousel">
+        <img id="carousel-image" src="images/1.jpg" alt="content1">
+        <p id="carousel-caption">"I wish you all the best!"</p>
+        <img id="carousel-image" src="images/2.jpg" alt="content2">
+        <!-- <p id="carousel-caption">"Happy birthday!"</p>
+        <img id="carousel-image" src="images/3.jpg" alt="Gcontent not available"> -->
+      </div>
+      <p id="carousel-caption">"Throwback to the good times!"</p>
+      <div class="carousel-controls">
+        <button class="btn" onclick="prevImage()">⟨ Prev</button>
+        <button class="btn" onclick="nextImage()">Next ⟩</button>
+      </div>
+    </section>
+<!-- 
+     Wish Section 
+    <section class="section" id="wish-section">
+      <h2>Write Your Birthday Wish 🎁</h2>
+      <textarea id="wish-input" placeholder="Share your message here..."></textarea>
+      <button class="btn" onclick="submitWish()">Submit</button>
+      <div id="wishes-display"></div>
+    </section> -->
+
+    <!-- Thank You Section -->
+    <section class="section" id="final-section">
+      <h1>🎈 Thank You! 🎈</h1>
+      <p>Here’s to more amazing years of friendship and memories. Happy Birthday again!</p>
+      <p>By Syed Minam ur Rehman</p>
+    </section>
+    <footer>
+      <p style="text-align: center; font-size: 15px; color: white">&copy; 2024 Syed Minam ur Rehman. All rights reserved.</p>
+      
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
